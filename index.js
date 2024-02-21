@@ -9,5 +9,10 @@ function calculate()
 {
     var y=eval(input);
     document.getElementById("t").value=y;
+    input=y+'';
+}
+function clearf()
+{
     input='';
+    document.getElementById("t").value=' ';
 }
