@@ -6,6 +6,7 @@
     text-align:center;
 }
 .container{
+    border:10px solid rgb(246, 115, 0);
     box-shadow:0px 0px 5px;
     display:flex;
     flex-direction:column;
@@ -27,6 +28,11 @@ button{
     color:white;
     font-weight:500;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor:pointer;
+}
+button:hover{
+    border:2px solid white;
+    box-shadow:0px 0px 5px white;
 }
 .operator,.calculate{
     background-color:rgb(255, 136, 0);
@@ -41,4 +47,5 @@ input{
     color:black;
     font-size:x-large;
     font-family: Arial, Helvetica, sans-serif;
+    cursor:default;
 }
