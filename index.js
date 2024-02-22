@@ -16,3 +16,14 @@ function clearf()
     input='';
     document.getElementById("t").value=' ';
 }
+$(document).keypress(function(event){
+    let b=event.key;
+    if(!isNaN(b)||b=='+'||b=='-'||b=='*'||b=='/'||b=='.')
+    Input(b);
+    else if(b=='='||b=='Enter')
+    calculate();
+    else if(b=='c')
+    clearf();
+    else
+    alert("wrong input")
+});
